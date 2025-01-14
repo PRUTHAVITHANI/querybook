@@ -10,13 +10,13 @@ x-querybook-depends-on: &querybook-depends-on
         condition: service_healthy
 x-querybook-volumes: &querybook-volumes
     # This is to sync in live code change
-    - $PWD:/opt/querybook
-    - $PWD/docs_website/static/changelog:/opt/querybook/querybook/static/changelog
+    - V:/querybook:/opt/querybook
+    - V:/querybook/docs_website/static/changelog:/opt/querybook/querybook/static/changelog
     # See https://stackoverflow.com/questions/29181032/add-a-volume-to-docker-but-exclude-a-sub-folder
     - /opt/querybook/node_modules/
     # Make sure the build files don't leak back
     - /opt/querybook/dist/
-    - $PWD/containers/bundled_querybook_config.yaml:/opt/querybook/querybook/config/querybook_config.yaml
+    - V:/querybook/containers/bundled_querybook_config.yaml:/opt/querybook/querybook/config/querybook_config.yaml
     # - file:/opt/store/
 
 services:
@@ -152,8 +152,8 @@ services:
     #     restart: 'always'
     #     volumes:
     #         # This is for code change via watcher
-    #         - $PWD:/opt/querybook
-    #         - $PWD/containers/bundled_querybook_config.yaml:/opt/querybook/querybook/config/querybook_config.yaml
+    #         - V:/querybook:/opt/querybook
+    #         - V:/querybook/containers/bundled_querybook_config.yaml:/opt/querybook/querybook/config/querybook_config.yaml
     #     depends_on:
     #         mysql:
     #             condition: service_healthy

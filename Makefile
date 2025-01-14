@@ -1,4 +1,4 @@
-SHELL := /bin/bash
+-SHELL := /bin/bash
 .PHONY: bundled_off prod_web prod_worker prod_scheduler docs remove_running_dev_image clean
 
 bundled: dev_image
@@ -17,7 +17,7 @@ scheduler: dev_image
 	docker-compose -f containers/docker-compose.dev.yml run scheduler
 
 terminal: dev_image
-	docker-compose -f containers/docker-compose.dev.yml run terminal
+	docker-compose -f containers/docker-com*pose.dev.yml run terminal
 
 prod_web:
 	docker-compose -f containers/docker-compose.prod.yml run web

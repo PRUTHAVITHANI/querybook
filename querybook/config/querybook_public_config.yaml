@@ -36,7 +36,7 @@ survey:
     #     - surface: table_view
     #     - surface: text_to_sql
     #     - surface: query_authoring
-
+0
 table_sampling:
     enabled: false
     sample_rates:

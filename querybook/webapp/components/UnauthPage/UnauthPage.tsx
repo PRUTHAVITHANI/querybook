@@ -7,10 +7,8 @@ import { Link } from 'ui/Link/Link';
 import { Message } from 'ui/Message/Message';
 import { QuerybookLogo } from 'ui/QuerybookLogo/QuerybookLogo';
 import { Tabs } from 'ui/Tabs/Tabs';
-
 import { LoginForm } from './LoginForm';
 import { SignupForm } from './SignupForm';
-
 import './UnauthPage.scss';
 
 export interface IUnauthPageProps {
@@ -40,32 +38,32 @@ export const UnauthPage = React.memo<IUnauthPageProps>(
 
         // This warning message is for whomever is using password_auth
         // as it is an insecure way to register and use Querybook
-        const querybookWarningMessage = showSignUp && (
-            <div className="mb24">
-                <Message type="error">
-                    <p>
-                        NOTE: This signup/login flow is only for people who
-                        wants to <b>temporarily</b> try out Querybook.
-                    </p>
-                    <p>
-                        The user name and password (as salted hash) information
-                        is only stored in the Querybook Database and is not
-                        passed anywhere.
-                    </p>
-                    <br />
-                    <p>
-                        Check out{' '}
-                        <Link
-                            to="https://www.querybook.org/docs/integrations/add_auth"
-                            naturalLink
-                        >
-                            the authentication guide
-                        </Link>{' '}
-                        to learn how to set it up for your org.
-                    </p>
-                </Message>
-            </div>
-        );
+        // const querybookWarningMessage = showSignUp && (
+        //     <div className="mb24">
+        //         <Message type="error">
+        //             <p>
+        //                 NOTE: This signup/login flow is only for people who
+        //                 wants to <b>temporarily</b> try out Querybook.
+        //             </p>
+        //             <p>
+        //                 The user name and password (as salted hash) information
+        //                 is only stored in the Querybook Database and is not
+        //                 passed anywhere.
+        //             </p>
+        //             <br />
+        //             <p>
+        //                 Check out{' '}
+        //                 <Link
+        //                     to="https://www.querybook.org/docs/integrations/add_auth"
+        //                     naturalLink
+        //                 >
+        //                     the authentication guide
+        //                 </Link>{' '}
+        //                 to learn how to set it up for your org.
+        //             </p>
+        //         </Message>
+        //     </div>
+        // );
 
         return (
             <Center>
@@ -73,7 +71,7 @@ export const UnauthPage = React.memo<IUnauthPageProps>(
                     <div className="center-align mb8">
                         <QuerybookLogo />
                     </div>
-                    {querybookWarningMessage}
+                    {/* {querybookWarningMessage} */}
                     <Box>
                         {showSignUp && (
                             <Tabs
