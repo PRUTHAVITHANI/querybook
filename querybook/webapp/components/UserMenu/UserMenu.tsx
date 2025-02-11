@@ -103,11 +103,11 @@ export const UserMenu: React.FC<IUserMenuProps> = ({
 
     const tokenCreationModalDOM = showTokenModal ? (
         <Modal
-            onHide={toggleShowTokenModal}
-            className="message-size"
-            title="Token Creation"
+            // onHide={toggleShowTokenModal}
+            // className="message-size"
+            // title="Token Creation"
         >
-            <TokenCreation uid={userInfo.uid} />
+            {/* <TokenCreation uid={userInfo.uid} /> */}
         </Modal>
     ) : null;
 

@@ -297,7 +297,7 @@ class QuerySnippetNavigatorComponent extends React.PureComponent<
 
         return (
             <>
-                <div className="QuerySnippetNavigator SidebarNavigator">
+                {/* <div className="QuerySnippetNavigator SidebarNavigator">
                     {this.makeSearchFilterDOM()}
                     {tabsDOM}
                     <div className="list-content">
@@ -305,7 +305,7 @@ class QuerySnippetNavigatorComponent extends React.PureComponent<
                     </div>
                 </div>
                 {filterDOM}
-                {createModal}
+                {createModal} */}
             </>
         );
     }

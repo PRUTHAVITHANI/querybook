@@ -125,7 +125,7 @@ import {
     Zap,
 } from 'lucide-react';
 
-const AllLucideIcons = {
+const  AllLucideIcons = {
     Activity,
     AlertCircle,
     AlertOctagon,

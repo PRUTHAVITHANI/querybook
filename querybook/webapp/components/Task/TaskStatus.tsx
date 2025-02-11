@@ -202,10 +202,10 @@ export const TaskStatus: React.FunctionComponent<ITaskStatusProps> = ({
     );
     return (
         <div className="TaskStatus">
-            {topDOM}
+            {/* {topDOM}
             {tableDOM}
             {isLoading ? <Loading /> : null}
-            {buttonDOM}
+            {buttonDOM} */}
         </div>
     );
 };

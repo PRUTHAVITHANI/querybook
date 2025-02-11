@@ -50,7 +50,7 @@
 #             'test_db',
 #             {
 #                 "connection_string":
-#                     "mysql+pymysql://test:passw0rd@mysql:3306/querybook2_test?charset=utf8mb4"
+#                     "mysql+pymysql://root:1234@mysql:3306/querybook2_root?charset=utf8mb4"
 #             },
 #             'MysqlMetastoreLoader',
 #             acl_control={},
@@ -63,7 +63,7 @@
 #             'sqlalchemy',
 #             {
 #                 "connection_string":
-#                     "mysql+pymysql://test:passw0rd@mysql:3306/querybook2_test?charset=utf8mb4"
+#                     "mysql+pymysql://root:1234@mysql:3306/querybook2_root?charset=utf8mb4"
 #             },
 #             environment.id,
 #             metastore.id,

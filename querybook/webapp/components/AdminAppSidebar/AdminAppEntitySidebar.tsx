@@ -56,7 +56,7 @@ export const AdminAppEntitySidebar: React.FunctionComponent<
                     {makeSidebarItem('api_access_token', 'Key')}
                     {makeSidebarItem('announcement', 'Volume2')}
                 </div>
-                {makeSidebarItem('config', 'Settings')}
+                {/* {makeSidebarItem('config', 'Settings')} */}
             </div>
             <div className="AdminAppEntitySidebar-bottom mb8">
                 <div

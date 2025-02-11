@@ -69,7 +69,7 @@ export const DataTableViewMini: React.FunctionComponent<IProps> = ({
                                   isModal: true,
                               });
                     }}
-                    title="View Table"
+                    // title="View Table"
                     className="table-details-button"
                 />
             </Level>

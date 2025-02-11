@@ -283,7 +283,7 @@ export const AdminEnvironment: React.FunctionComponent<IProps> = ({
                             <AdminAuditLogButton itemType={'environment'} />
                         </Level>
                         <div className="AdminLanding-desc">
-                            Querybook provides environments for access control
+                            Digixt provides environments for access control
                             and scoped workspaces.
                         </div>
                     </div>

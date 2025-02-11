@@ -232,18 +232,18 @@ export const QuerybookSidebarUIGuide: React.FC = () => {
 
     return (
         <>
-            <Button
+            {/* <Button
                 className="QuerybookSidebarUIGuide"
                 onClick={startTour}
                 icon="Layout"
                 title="UI Tutorial"
-            />
-            <Tour
+            /> */}
+            {/* <Tour
                 isOpen={showTour}
                 onRequestClose={() => setShowTour(false)}
                 steps={steps}
                 accentColor={'var(--color-accent)'}
-            />
+            /> */}
         </>
     );
 };

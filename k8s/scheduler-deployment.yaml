@@ -22,7 +22,7 @@ spec:
                       - name: FLASK_SECRET_KEY
                         value: SOME_RANDOM_SECRET_KEY
                       - name: DATABASE_CONN
-                        value: mysql+pymysql://test:passw0rd@mysql:3306/querybook2?charset=utf8mb4
+                        value: mysql+pymysql:/root:1234@mysql:3306/querybook2?charset=utf8mb4
                       - name: REDIS_URL
                         value: redis://redis:6379/0
                       - name: ELASTICSEARCH_HOST

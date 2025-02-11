@@ -256,7 +256,7 @@ const AppAdmin: React.FunctionComponent = () => {
                         path="/admin/announcement/"
                         component={AdminAnnouncement}
                     />
-                    <Route path="/admin/config/" component={AdminConfig} />
+                    {/* <Route path="/admin/config/" component={AdminConfig} /> */}
                     <Route component={FourOhThree} />
                 </Switch>
             </div>

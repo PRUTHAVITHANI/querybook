@@ -10,7 +10,7 @@ const StyledQuerybookLogo = styled.span`
 
     font-size: ${({ size }) => `${size}rem`};
     .querybook-brandmark {
-        width: ${({ size }) => `${size * 1.3}rem`};
+        width: ${({ size }) => `${size * 5}rem`};
         height: ${({ size }) => `${size * 1.3}rem`};
     }
 
@@ -28,14 +28,14 @@ const StyledQuerybookLogo = styled.span`
 export const QuerybookLogo: React.FC<{
     size?: number;
     withBrandMark?: boolean;
-}> = ({ size = 2, withBrandMark }) => (
+}> = ({ size = 1.3, withBrandMark }) => (
     <StyledQuerybookLogo size={size}>
         {withBrandMark && (
             <img
                 className="querybook-brandmark"
-                src={'/static/favicon/querybook.svg'}
+                src={'/static/image/logo.png'}
             />
         )}
-        <span className="querybook-wordmark">{getAppName()}</span>
+        {/* <span className="querybook-wordmark">{getAppName()}</span> */}
     </StyledQuerybookLogo>
 );

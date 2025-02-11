@@ -85,7 +85,7 @@ export const AdminAnnouncement: React.FunctionComponent = () => {
 
     const renderAnnouncementItem = () => (
         <div className="AdminForm">
-            <div className="AdminForm-main">
+            {/* <div className="AdminForm-main">
                 <div className="AdminForm-left">
                     <SimpleField
                         stacked
@@ -137,7 +137,7 @@ export const AdminAnnouncement: React.FunctionComponent = () => {
                         help="Enabling will allow users to dismiss the announcement"
                     />
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 

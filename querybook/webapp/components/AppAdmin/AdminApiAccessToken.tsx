@@ -118,7 +118,7 @@ export const AdminApiAccessToken: React.FunctionComponent = () => {
                 </div>
             </div>
             <div className="AdminApiAccessToken-content">
-                {tokenList.length ? (
+                {/* {tokenList.length ? (
                     <Table
                         rows={tokenList}
                         cols={tableColumns}
@@ -127,7 +127,7 @@ export const AdminApiAccessToken: React.FunctionComponent = () => {
                         colNameToTextAlign={tableColumnAligns}
                         showAllRows={true}
                     />
-                ) : null}
+                ) : null} */}
             </div>
         </div>
     );

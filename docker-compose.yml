@@ -10,13 +10,13 @@ x-querybook-depends-on: &querybook-depends-on
         condition: service_healthy
 x-querybook-volumes: &querybook-volumes
     # This is to sync in live code change
-    - V:/querybook:/opt/querybook
-    - V:/querybook/docs_website/static/changelog:/opt/querybook/querybook/static/changelog
+    - /mnt/v/querybook:/opt/querybook
+    - /mnt/v/querybook/docs_website/static/changelog:/opt/querybook/querybook/static/changelog
     # See https://stackoverflow.com/questions/29181032/add-a-volume-to-docker-but-exclude-a-sub-folder
     - /opt/querybook/node_modules/
     # Make sure the build files don't leak back
     - /opt/querybook/dist/
-    - V:/querybook/containers/bundled_querybook_config.yaml:/opt/querybook/querybook/config/querybook_config.yaml
+    - /mnt/v/querybook/containers/bundled_querybook_config.yaml:/opt/querybook/querybook/config/querybook_config.yaml
     # - file:/opt/store/
 
 services:
@@ -35,6 +35,7 @@ services:
             PORT: '${PORT:-10001}'
             APIPORT: '${APIPORT:-3000}'
             HOT_RELOAD: '${HOT_RELOAD:-true}'
+            OPENAI_API_KEY: ${OPENAI_API_KEY}
         restart: 'always'
         volumes: *querybook-volumes
         depends_on: *querybook-depends-on
@@ -73,7 +74,7 @@ services:
         restart: always
         ports:
             # <Port exposed> : < MySQL Port running inside container>
-            - '3306:3306'
+            - '3308:3306'
         expose:
             # Opens port 3306 on the container
             - '3306'
@@ -83,15 +84,13 @@ services:
         environment:
             MYSQL_HOST: mysql:3306
             MYSQL_DATABASE: querybook2
-            MYSQL_USER: test
-            MYSQL_PASSWORD: passw0rd
             # Password for root access
-            MYSQL_ROOT_PASSWORD: hunter2
+            MYSQL_ROOT_PASSWORD: 1234
         healthcheck:
             test:
                 [
                     'CMD-SHELL',
-                    "mysqladmin -h 'localhost' -u test -ppassw0rd ping --silent",
+                    "mysqladmin -h 'localhost' -u root -p1234 ping --silent",
                 ]
             interval: 30s
             timeout: 30s

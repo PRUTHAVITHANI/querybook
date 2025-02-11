@@ -157,7 +157,7 @@ export const EntitySidebar: React.FunctionComponent<IEntitySidebarProps> =
                 <div className="apps-list flex-column">
                     <QueryEngineStatusButton />
                     <UserMenu />
-                    <InfoMenuButton />
+                    {/* <InfoMenuButton /> */}
                 </div>
             </div>
         );

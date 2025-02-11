@@ -883,10 +883,11 @@ export const SearchOverview: React.FC<ISearchOverviewProps> = ({
 
     return (
         <div className="SearchOverview">
-            {searchTypeDOM}
+            Search Queries,tables,datadoc,etc.
+            {/* {searchTypeDOM}.000
             {getSearchBarDOM()}
             {searchBodyDOM}
-            {instructionsTipDOM}
+            {instructionsTipDOM} */}
         </div>
     );
 };

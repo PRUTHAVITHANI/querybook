@@ -151,7 +151,7 @@ const DataDocScheduleList: React.FC = () => {
 
     return (
         <Container>
-            <div className="DataDocScheduleList">
+            {/* <div className="DataDocScheduleList">
                 <div className="DataDocScheduleList-top horizontal-space-between mb16">
                     <div className="flex1 mr12">
                         <DebouncedInput
@@ -208,7 +208,7 @@ const DataDocScheduleList: React.FC = () => {
                         />
                     )}
                 </div>
-            </div>
+            </div> */}
         </Container>
     );
 };

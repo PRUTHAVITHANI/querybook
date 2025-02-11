@@ -20,25 +20,26 @@ const UserSettingsMenuRoute: React.FunctionComponent<RouteComponentProps> = ({
     const [tab, setTab] = React.useState<UserSettingsTab>('general');
 
     return (
-        <Modal
-            onHide={
-                isModalRoute ? history.goBack : () => navigateWithinEnv('/')
-            }
-            title="User Settings"
-            topDOM={
-                <Tabs
-                    className="mb8"
-                    items={[
-                        { key: 'general', name: 'General' },
-                        { key: 'editor', name: 'Editor' },
-                    ]}
-                    selectedTabKey={tab}
-                    onSelect={(newTab: UserSettingsTab) => setTab(newTab)}
-                />
-            }
-        >
-            <UserSettingsMenu tab={tab} />
-        </Modal>
+        <></>
+        // <Modal
+        //     onHide={
+        //         isModalRoute ? history.goBack : () => navigateWithinEnv('/')
+        //     }
+        //     title="User Settings"
+        //     topDOM={
+        //         <Tabs
+        //             className="mb8"
+        //             items={[
+        //                 { key: 'general', name: 'General' },
+        //                 { key: 'editor', name: 'Editor' },
+        //             ]}
+        //             selectedTabKey={tab}
+        //             onSelect={(newTab: UserSettingsTab) => setTab(newTab)}
+        //         />
+        //     }
+        // >
+        //     <UserSettingsMenu tab={tab} />
+        // </Modal>
     );
 };
 
