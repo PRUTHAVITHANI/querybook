@@ -18,7 +18,7 @@ OPENAI_MODEL_CONTEXT_WINDOW_SIZE = {
     "gpt-4o": 128000,
     "gpt-4o-mini": 128000,
 }
-DEFAULT_MODEL_NAME = "gpt-4o-mini"
+DEFAULT_MODEL_NAME = "gpt-3.5-turbo"
 
 
 class OpenAIAssistant(BaseAIAssistant):

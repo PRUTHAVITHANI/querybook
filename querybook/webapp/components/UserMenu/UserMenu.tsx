@@ -85,9 +85,9 @@ export const UserMenu: React.FC<IUserMenuProps> = ({
                 {themeToggle}
                 <MenuItem onClick={goToUserSettingsMenu}>Settings</MenuItem>
                 <MenuDivider />
-                <MenuItem onClick={toggleShowTokenModal}>
+                {/* <MenuItem onClick={toggleShowTokenModal}>
                     API Access Token
-                </MenuItem>
+                </MenuItem> */}
                 {userInfo.isAdmin && (
                     <MenuItem>
                         <Link className="flex1" to="/admin">
@@ -103,11 +103,11 @@ export const UserMenu: React.FC<IUserMenuProps> = ({
 
     const tokenCreationModalDOM = showTokenModal ? (
         <Modal
-            // onHide={toggleShowTokenModal}
-            // className="message-size"
-            // title="Token Creation"
+            onHide={toggleShowTokenModal}
+            className="message-size"
+            title="Token Creation"
         >
-            {/* <TokenCreation uid={userInfo.uid} /> */}
+            <TokenCreation uid={userInfo.uid} />
         </Modal>
     ) : null;
 

@@ -142,7 +142,7 @@ export const QueryViewNavigator: React.FC = () => {
 
     return (
         <div className="QueryViewNavigator SidebarNavigator">
-            {/* <div className="list-header">{queryViewFilterDOM}</div>
+            <div className="list-header">{queryViewFilterDOM}</div>
             <div
                 ref={navigatorScrollRef}
                 className="list-content scroll-wrapper"
@@ -151,7 +151,7 @@ export const QueryViewNavigator: React.FC = () => {
                 {queryResultsListDOM}
                 {loadingDOM}
                 {noResultDOM}
-            </div> */}
+            </div>
         </div>
     );
 };

@@ -153,11 +153,11 @@ export const AdminTask: React.FC = () => {
             <div className="AdminLanding-top">
                 <Level>
                     <div className="AdminLanding-title">Task</div>
-                    <AdminAuditLogButton itemType={'task'} />
+                    {/* <AdminAuditLogButton itemType={'task'} /> */}
                 </Level>
                 <div className="AdminLanding-desc">Manage all tasks here.</div>
             </div>
-            {/* <div className="AdminTask-content">
+            <div className="AdminTask-content">
                 <div className="AdminTask-controls horizontal-space-between mb24">
                     <Tabs
                         selectedTabKey={type}
@@ -194,8 +194,8 @@ export const AdminTask: React.FC = () => {
                         showAllRows={true}
                     />
                 ) : null}
-            </div> */}
-            {/* {detailTask || detailTaskId === 'new' ? (
+            </div>
+            {detailTask || detailTaskId === 'new' ? (
                 <Modal
                     onHide={() => history.push('/admin/task/')}
                     title="Task Editor"
@@ -213,7 +213,7 @@ export const AdminTask: React.FC = () => {
                         }}
                     />
                 </Modal>
-            ) : null} */}
+            ) : null}
         </div>
     );
 };

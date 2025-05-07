@@ -195,15 +195,16 @@ export const DataDocNavigatorBoardSection: React.FC<
     );
 
     return (
-        <div className="DataDocNavigatorSection mb12">
-            {sectionHeader}
-            {boardsDOM}
-            {showCreateModal ? (
-                <BoardCreateUpdateModal
-                    onComplete={() => setShowCreateModal(false)}
-                    onHide={() => setShowCreateModal(false)}
-                />
-            ) : null}
-        </div>
+        <></>
+        // <div className="DataDocNavigatorSection mb12">
+        //     {sectionHeader}
+        //     {boardsDOM}
+        //     {showCreateModal ? (
+        //         <BoardCreateUpdateModal
+        //             onComplete={() => setShowCreateModal(false)}
+        //             onHide={() => setShowCreateModal(false)}
+        //         />
+        //     ) : null}
+        // </div>
     );
 };

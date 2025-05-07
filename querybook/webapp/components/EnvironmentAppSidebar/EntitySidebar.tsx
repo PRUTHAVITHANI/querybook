@@ -129,7 +129,7 @@ export const EntitySidebar: React.FunctionComponent<IEntitySidebarProps> =
                             title="Tables"
                         />
                     ) : null}
-                    <IconButton
+                    {/* <IconButton
                         icon="Code"
                         tooltip="Snippets"
                         tooltipPos="right"
@@ -142,7 +142,7 @@ export const EntitySidebar: React.FunctionComponent<IEntitySidebarProps> =
                             onSelectEntity('snippet');
                         }}
                         title="Snips"
-                    />
+                    /> */}
                     <QueryExecutionButton
                         onClick={() => {
                             trackClick({

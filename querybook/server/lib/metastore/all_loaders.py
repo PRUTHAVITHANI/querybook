@@ -2,17 +2,17 @@ from lib.utils.import_helper import import_module_with_default, import_modules
 
 PROVIDED_METASTORE_LOADERS = import_modules(
     [
-        ("lib.metastore.loaders.hive_metastore_loader", "HMSMetastoreLoader"),
+        # ("lib.metastore.loaders.hive_metastore_loader", "HMSMetastoreLoader"),
         ("lib.metastore.loaders.mysql_metastore_loader", "MysqlMetastoreLoader"),
-        (
-            "lib.metastore.loaders.thrifthive_metastore_loader",
-            "HMSThriftMetastoreLoader",
-        ),
+        # (
+        #     "lib.metastore.loaders.thrifthive_metastore_loader",
+        #     "HMSThriftMetastoreLoader",
+        # ),
         (
             "lib.metastore.loaders.sqlalchemy_metastore_loader",
             "SqlAlchemyMetastoreLoader",
         ),
-        ("lib.metastore.loaders.glue_data_catalog_loader", "GlueDataCatalogLoader"),
+        # ("lib.metastore.loaders.glue_data_catalog_loader", "GlueDataCatalogLoader"),
     ]
 )
 

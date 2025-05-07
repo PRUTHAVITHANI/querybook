@@ -134,11 +134,11 @@ export const DataDocLeftSidebar: React.FunctionComponent<IProps> = ({
     return (
         <div
             className={clsx({
-                DataDocLeftSidebar: true,
-                hidden: cells.length === 0,
+                // DataDocLeftSidebar: true,
+                // hidden: cells.length === 0,
             })}
         >
-            {contentState === 'default' ? (
+            {/* {contentState === 'default' ? (
                 <> {contentDOM} </>
             ) : (
                 <Resizable
@@ -149,7 +149,7 @@ export const DataDocLeftSidebar: React.FunctionComponent<IProps> = ({
                 >
                     {contentDOM}
                 </Resizable>
-            )}
+            )} */}
         </div>
     );
 };

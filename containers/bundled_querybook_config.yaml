@@ -1,7 +1,7 @@
 # Make sure this is consistent with mysql part of docker-compose.yml
 FLASK_SECRET_KEY: SOME_RANDOM_SECRET_KEY
 
-DATABASE_CONN: mysql+pymysql://root:1234@mysql:3306/querybook2?charset=utf8mb4
+DATABASE_CONN: mysql+pymysql://test:passw0rd@mysql:3306/querybook2?charset=utf8mb4
 REDIS_URL: redis://redis:6379/0
 ELASTICSEARCH_HOST: http://elasticsearch:9200
 # ELASTICSEARCH_CONNECTION_TYPE: aws

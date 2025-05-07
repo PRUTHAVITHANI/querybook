@@ -142,9 +142,9 @@ export const DataDocRightSidebar: React.FunctionComponent<IProps> = ({
                 {isEditable && exporterExists && (
                     <DataDocDAGExporterButton docId={dataDoc.id} />
                 )}
-                {boardsButtonDOM}
-                {templateButtonDOM}
-                {scheduleButtonDOM}
+                {/* {boardsButtonDOM} */}
+                {/* {templateButtonDOM} */}
+                {/* {scheduleButtonDOM} */}
                 <IconButton
                     icon="Copy"
                     onClick={onClone}
@@ -160,10 +160,10 @@ export const DataDocRightSidebar: React.FunctionComponent<IProps> = ({
     return (
         <div
             className="DataDocRightSidebar right-align"
-            style={{ height: `calc(100vh - ${numAnnouncements * 40}px)` }}
-            ref={selfRef}
+            // style={{ height: `calc(100vh - ${numAnnouncements * 40}px)` }}
+            // ref={selfRef}
         >
-            {buttonSection}
+            {/* {buttonSection} */}
         </div>
     );
 };

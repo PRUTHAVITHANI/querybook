@@ -846,12 +846,12 @@ const QueryComposer: React.FC = () => {
             <div className="QueryComposer-header-vertical">
                 <Level>
                     <LevelItem>
-                        <Button
+                        {/* <Button
                             icon="Edit3"
                             title="Format"
                             onClick={handleFormatQuery}
                             theme="text"
-                        />
+                        /> */}
                         <Button
                             icon="Delete"
                             title="Clear"

@@ -409,7 +409,7 @@ export const AdminQueryEngine: React.FunctionComponent<IProps> = ({
                                     withDeselect
                                 />
 
-                                <SimpleField
+                                {/* <SimpleField
                                     stacked
                                     name="feature_params.upload_exporter"
                                     type="react-select"
@@ -429,14 +429,14 @@ export const AdminQueryEngine: React.FunctionComponent<IProps> = ({
                                         ] ?? []
                                     }
                                     withDeselect
-                                />
-
+                                /> */}
+{/* 
                                 <SimpleField
                                     stacked
                                     name="feature_params.row_limit"
                                     type="toggle"
                                     label="(Experimental) Enable Row Limit"
-                                />
+                                /> */}
                             </div>
                         </div>
 

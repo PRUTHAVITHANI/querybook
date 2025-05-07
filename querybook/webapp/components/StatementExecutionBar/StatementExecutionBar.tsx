@@ -99,7 +99,7 @@ export const StatementExecutionBar = React.memo<IProps>(
 
         return (
             <div className={'StatementExecutionBar flex-row'}>
-                {showExecutedQueryButton}
+                {/* {showExecutedQueryButton} */}
                 {getToggleLogsButtonDOM()}
                 {getToggleMetaButtonDOM()}
                 {cancelQueryButton}

@@ -143,25 +143,26 @@ export const DataDocUIGuide: React.FunctionComponent = () => {
         }
     }, [tour]);
     return (
-        <div className="DataDocUIGuide flex-center">
-            <IconButton
-                onClick={() => {
-                    trackClick({
-                        component: ComponentType.DATADOC_PAGE,
-                        element: ElementType.DATADOC_UI_GUIDE_BUTTON,
-                    });
-                    setIsOpen(true);
-                }}
-                icon="HelpCircle"
-                tooltipPos="left"
-                tooltip="DataDoc UI Guide"
-            />
-            <Tour
-                isOpen={isOpen}
-                onRequestClose={() => setIsOpen(false)}
-                steps={DataDocTourSteps}
-                accentColor={'var(--color-accent)'}
-            />
-        </div>
+        <></>
+        // <div className="DataDocUIGuide flex-center">
+        //     <IconButton
+        //         onClick={() => {
+        //             trackClick({
+        //                 component: ComponentType.DATADOC_PAGE,
+        //                 element: ElementType.DATADOC_UI_GUIDE_BUTTON,
+        //             });
+        //             setIsOpen(true);
+        //         }}
+        //         icon="HelpCircle"
+        //         tooltipPos="left"
+        //         tooltip="DataDoc UI Guide"
+        //     />
+        //     <Tour
+        //         isOpen={isOpen}
+        //         onRequestClose={() => setIsOpen(false)}
+        //         steps={DataDocTourSteps}
+        //         accentColor={'var(--color-accent)'}
+        //     />
+        // </div>
     );
 };

@@ -323,7 +323,7 @@ const FetchInfo: React.FC<{
                 <AccentText
                     className="flex-row warning-word ml4"
                     tooltip={
-                        'The number of rows returned matches exactly with the LIMIT in query'
+                        'The number of rows returned matches e  xactly with the LIMIT in query'
                     }
                     data-balloon-length="medium"
                 >

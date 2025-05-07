@@ -196,19 +196,19 @@ export const AdminAnnouncement: React.FunctionComponent = () => {
             <div className="AdminLanding-top">
                 <Level>
                     <div className="AdminLanding-title">Announcements</div>
-                    <AdminAuditLogButton itemType={'announcement'} />
+                    {/* <AdminAuditLogButton itemType={'announcement'} /> */}
                 </Level>
 
                 <div className="AdminLanding-desc">
                     Make an app-wide or an environment-specific announcement.
                 </div>
             </div>
-            <div className="AdminAnnouncement-content">
+            {/* <div className="AdminAnnouncement-content">
                 <div className="AdminAnnouncement-new">{getNewFormDOM()}</div>
                 <div className="AdminAnnouncement-list flex-column">
                     {announcements ? getCardDOM() : <Loading />}
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

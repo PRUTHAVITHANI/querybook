@@ -78,17 +78,17 @@ export const DataDocHeader = React.forwardRef<HTMLDivElement, IProps>(
                             })}
                             onClick={toggleFavorite}
                         />
-                        <BoardItemAddButton
+                        {/* <BoardItemAddButton
                             noPadding
                             size={16}
                             itemType="data_doc"
                             itemId={dataDoc.id}
-                        />
-                        <ImpressionWidget
+                        /> */}
+                        {/* <ImpressionWidget
                             itemId={dataDoc.id}
                             type={'DATA_DOC'}
                             popoverLayout={['right', 'top']}
-                        />
+                        /> */}
                     </div>
                     <div className="data-doc-header-users flex-row">
                         <DataDocViewersBadge docId={dataDoc.id} />
